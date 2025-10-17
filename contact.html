@@ -4,17 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>צור קשר - הלוט היומי</title>
-  <meta name="description" content="צור קשר עם צוות {{SITE_NAME}} לקבלת מידע נוסף, שאלות או שיתופי פעולה.">
+  <meta name="description" content="צור קשר עם צוות הלוט היומי לקבלת מידע נוסף, שאלות או שיתופי פעולה.">
   <style>
-    /* משתמשים ב־CSS מהעמוד הראשי */
+    /* בסיס ועימוד */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
     body {
-      box-sizing: border-box; margin: 0; padding: 0;
+      margin: 0; padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6; color: #000; background: #fff; direction: rtl;
+      display: flex; flex-direction: column; /* מאפשר פוטר בתחתית */
     }
-    * { box-sizing: border-box; }
+    main { flex: 1; display: flex; flex-direction: column; }
+
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
+    /* Hero */
     .hero {
       padding: 60px 0 80px; text-align: center;
       background: linear-gradient(135deg,#39FF14 0%,#00d4aa 50%,#0099ff 100%);
@@ -25,59 +30,73 @@
     .hero h1 { font-size:clamp(2rem,5vw,3.5rem); font-weight:900; margin:0 0 20px; line-height:1.2; }
     .hero h2 { font-size:clamp(1.1rem,3vw,1.4rem); font-weight:400; margin:0 0 40px; color:#333; max-width:600px; margin-left:auto; margin-right:auto; }
 
-    .contact-section { padding: 60px 0; }
-    .contact-card {
-      background: #f8f9fa; border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-      padding: 30px; max-width: 700px; margin: 0 auto;
+    /* אזור התוכן המרכזי – ממורכז וגדול יותר */
+    .content-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;         /* מרכז אנכית */
+      justify-content: center;     /* מרכז אופקית */
+      padding: 40px 20px;          /* ריווח למסכים קטנים */
     }
-    .contact-card h3 { margin-top:0; font-weight:800; font-size:1.4rem; margin-bottom:20px; }
-    .contact-card p { margin-bottom:15px; color:#333; }
 
-    .contact-info { margin-top:20px; }
+    .contact-card {
+      background: #f8f9fa; border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      padding: 42px;
+      max-width: 840px;            /* גדול יותר */
+      width: 100%;
+      text-align: center;
+    }
+    .contact-card h3 { margin-top:0; font-weight:800; font-size:1.6rem; margin-bottom:16px; }
+    .contact-card p { margin-bottom:18px; color:#333; font-size:1.1rem; }
+
+    .contact-info { margin-top:18px; font-size:1.05rem; }
     .contact-info div { margin-bottom:12px; font-weight:600; }
     .contact-info a { color:#0099ff; text-decoration:none; }
     .contact-info a:hover { text-decoration:underline; }
 
+    /* פוטר בתחתית באופן טבעי */
     .footer { padding:40px 0; background:#f8f9fa; text-align:center; }
     .footer-links a { color:#666; margin:0 10px; text-decoration:none; }
     .footer-links a:hover { color:#39FF14; }
-    .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+    .copyright { color:#999; font-size:0.9rem; margin-top:10px; }
 
+    /* רספונסיבי */
+    @media (max-width: 768px) {
+      .container { padding: 0 15px; }
+      .hero { padding: 40px 0 60px; }
+      .content-wrap { padding: 24px 15px; }
+      .contact-card { padding: 28px; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h1>צור קשר</h1>
-      <h2>יש לך שאלה, הצעה או שיתוף פעולה? אנחנו כאן לשמוע.</h2>
-    </div>
-  </section>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>צור קשר</h1>
+        <h2>יש לך שאלה, הצעה או שיתוף פעולה? אנחנו כאן לשמוע.</h2>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="contact-section">
-    <div class="container">
-      <div class="contact-card">
-        <h3>איך ניתן להגיע אלינו?</h3>
-        <p>אנחנו זמינים לכל פנייה - טכנית, עסקית או סתם לשאול שאלה. אל תהסס לפנות:</p>
+    <!-- תוכן ממורכז -->
+    <section class="content-wrap">
+      <div class="container">
+        <div class="contact-card">
+          <h3>איך ניתן להגיע אלינו?</h3>
+          <p>אנחנו זמינים לכל פנייה — טכנית, עסקית או סתם לשאול שאלה. אל תהסס לפנות.</p>
 
-        <div class="contact-info">
-          <div>📧 דוא״ל: <a href="mailto:info@halot-hayomi.com">info@haloot-hayomi.com</a></div>
-          <div>📱 טלפון: <a href="tel:055-433-6016">055-433-6016
-
-</a></div>
-          <div>💬 או השאר הודעה בוואטסאפ: <a href="https://wa.me/972554336016">לחץ כאן</a></div>
+          <div class="contact-info">
+            <div>📧 דוא״ל: <a href="mailto:info@halot-hayomi.com">info@halot-hayomi.com</a></div>
+            <div>📱 טלפון: <a href="tel:+972554336016">055-433-6016</a></div>
+            <div>💬 וואטסאפ: <a href="https://wa.me/972554336016">לחץ כאן לשליחת הודעה</a></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -86,12 +105,12 @@
         <a href="/">דף הבית</a> |
         <a href="/privacy.html">מדיניות פרטיות</a> |
         <a href="/terms.html">תקנון ותנאי שימוש</a> |
-        <a href="/privacy.html">מדיניות פרטיות</a> 
+        <a href="/contact.html">צור קשר</a>
       </div>
-    </div>
-    <div class="container mx-auto text-center">
+      <div class="container mx-auto text-center">
                 <p class="text-gray-400 mb-4">© 2025 הלוט היומי - כל הזכויות שמורות</p>
             </div>
+    </div>
   </footer>
 
 </body>
