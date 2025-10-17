@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>תקנון ותנאי שימוש - הלוט היומי</title>
+  <meta name="description" content="תקנון ותנאי שימוש באתר הלוט היומי.">
+  <style>
+    /* === stylesheet from landing page (condensed to essentials) === */
+    body {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6; color: #000; background: #fff; direction: rtl;
+    }
+    * { box-sizing: border-box; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    .hero {
+      padding: 60px 0 80px; text-align: center;
+      background: linear-gradient(135deg, #39FF14 0%, #00d4aa 50%, #0099ff 100%);
+      color: #000; position: relative; overflow: hidden; animation: fadeIn 1s ease-out;
+    }
+    .hero::before { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.9); z-index:1; }
+    .hero .container { position:relative; z-index:2; }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; margin: 0 0 20px; line-height: 1.2;
+      animation: slideUp 0.8s ease-out 0.2s both;
+    }
+    .hero h2 {
+      font-size: clamp(1.1rem, 3vw, 1.4rem); font-weight: 400; margin: 0 0 40px; color: #333;
+      max-width: 700px; margin-left:auto; margin-right:auto; animation: slideUp 0.8s ease-out 0.4s both;
+    }
+    .cta-button {
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      background:#39FF14; color:#000; font-weight:700; padding:12px 20px; border-radius:14px;
+      text-decoration:none; font-size:1rem; box-shadow:0 8px 24px rgba(57,255,20,0.3);
+      transition:all .3s ease; animation: slideUp 0.8s ease-out 0.6s both;
+    }
+    .cta-button:hover { transform: translateY(-2px); box-shadow:0 12px 32px rgba(57,255,20,0.4); }
+
+    /* Legal sections styled like FAQ cards */
+    .legal { padding: 60px 0 40px; }
+    .legal .card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 12px; padding: 25px; margin-bottom: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      border-left: 4px solid #39FF14; transition: all 0.3s ease; color:#000;
+    }
+    .legal .card:hover { transform: translateX(10px); box-shadow: 0 12px 40px rgba(0,0,0,0.15); }
+    .legal h3 { font-weight: 800; font-size: 1.25rem; margin: 0 0 10px; }
+    .legal p { margin: 0 0 10px; color:#555; }
+
+    .final-cta {
+      padding: 80px 0; text-align: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      background-size: 200% 200%; animation: gradientShift 6s ease infinite;
+      color: #fff; position: relative; overflow: hidden;
+    }
+    .final-cta::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.3); z-index:1; }
+    .final-cta .container { position:relative; z-index:2; }
+    .final-cta h3 { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 800; margin: 0 0 30px; }
+
+    .footer { padding: 40px 0; background: #f8f9fa; text-align: center; }
+    .disclosure {
+      font-size: 0.85rem; color: #666; margin-bottom: 20px;
+      max-width: 800px; margin-left: auto; margin-right: auto;
+    }
+    .footer-links { font-size: 0.9rem; }
+    .footer-links a { color: #666; text-decoration: none; margin: 0 10px; }
+    .footer-links a:hover { color: #39FF14; }
+
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+    @keyframes slideUp { from{opacity:0; transform: translateY(30px)} to{opacity:1; transform: translateY(0)} }
+    @keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+
+    @media (max-width: 768px) {
+      .container { padding: 0 15px; }
+      .hero { padding: 40px 0 60px; }
+      .legal, .final-cta { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+          <h1>תנאי שימוש - הלוט היומי (Haloot Hayomi)</h1>
+      <a href="/" class="cta-button">חזרה לדף הראשי</a>
+      <div class="trust-line" style="margin-top:10px;color:#666;">עודכן לאחרונה: 17 באוקטובר 2025</div>
+    </div>
+  </section>
+
+  <!-- TERMS -->
+  <section class="legal">
+    <div class="container">
+
+      <div class="card">
+        <h3>הסכמה לתנאים</h3>
+    <p>ברוכים הבאים לאתר <strong>הלוט היומי</strong> ("האתר") ולקבוצת הוואטסאפ הנלווית ("השירות"). השימוש באתר ובשירות, לרבות התכנים והמידע המוצגים בהם, כפוף לתנאים המפורטים להלן ("תנאי השימוש"). עצם הכניסה לאתר והשימוש בשירות מהווים הסכמה מצדך ("המשתמש") לכל תנאי השימוש הללו. אם אינך מסכים לתנאים אלה, כולם או חלקם, אינך רשאי לעשות שימוש באתר או בשירות.</p>
+      </div>
+
+      <div class="card">
+        <h3>קניין רוחני והרשאת שימוש</h3>
+<p>כל התכנים, המידע, הקוד, העיצובים, התמונות והסימנים המסחריים באתר ובשירות ("התוכן") הינם קניינה הבלעדי של <strong>הלוט היומי</strong> או של צדדים שלישיים שהרשו לנו להשתמש בהם, ומוגנים על פי דיני הקניין הרוחני. התוכן מסופק לשימוש אישי ואינפורמטיבי בלבד.</p>
+    <p>חל איסור מוחלט להעתיק, לשכפל, להפיץ, לשדר, להציג, למכור, להעניק רישיון או לעשות כל שימוש מסחרי או אחר בתוכן, כולו או חלקו, במישרין או בעקיפין, ללא קבלת אישור מפורש מראש ובכתב מאת <strong>הלוט היומי</strong>.</p>      </div>
+
+      <div class="card">
+        <h3>התחייבויות המשתמש</h3>
+ <p>המשתמש מתחייב בזאת:</p>
+    <ul>
+        <li>שלא לבצע כל פעולה שיש בה כדי לשבש את פעילותו התקינה של האתר או השירות, לרבות שימוש בתוכנות אוטומטיות (בוטים), סקריפטים, או ניסיונות חדירה למערכות האתר (מתקפות סייבר).</li>
+        <li>להימנע מפרסום, העלאה או הפצה של כל תוכן שהוא בלתי חוקי, מאיים, פוגעני, גזעני, מהווה לשון הרע, מפר פרטיות, או מפר זכויות קניין רוחני של צד שלישי כלשהו.</li>
+        <li>לשפות ולפצות את <strong>הלוט היומי</strong>, עובדיה, מנהליה או מי מטעמה בגין כל נזק, הפסד, אובדן רווח, תשלום או הוצאה שייגרמו להם, ובכלל זה שכ"ט עו"ד והוצאות משפט, עקב הפרת תנאי שימוש אלה.</li>
+    </ul>      
+    </div>
+
+      <div class="card">
+        <h3>הגבלת אחריות</h3>
+<p>האתר והשירות, לרבות כל תוכן, דיל או קישור המופיעים בהם, מסופקים "כמות שהם" (AS IS) ללא כל אחריות, מפורשת או משתמעת. <strong>הלוט היומי</strong> אינה נושאת באחריות כלשהי לנכונות, לאמינות, לשלמות או לעדכניות המידע והדילים המוצגים.</p>
+    <p>השימוש באתר, בשירות, בדילים המוצעים, בקישורים חיצוניים או בכל מידע אחר הנמסר דרכם, נעשה על אחריותו הבלעדית של המשתמש. <strong>הלוט היומי</strong> לא תישא באחריות לכל נזק, ישיר או עקיף, תוצאתי או מיוחד, שייגרם למשתמש או לצד שלישי כלשהו כתוצאה מהשימוש או מהסתמכות על התוכן, הדילים או השירותים, לרבות אך לא רק, נזקים הנובעים מרכישת מוצרים דרך קישורים באתר או בשירות.</p>
+      </div>
+
+      <div class="card">
+        <h3>קישורים חיצוניים ושיווק שותפים</h3>
+    <p>האתר והשירות עשויים לכלול קישורים לאתרי אינטרנט חיצוניים (לדוגמה, אתר AliExpress), לרבות קישורי שותפים (Affiliate Links). <strong>הלוט היומי</strong> עשויה לקבל עמלה בגין רכישות שיתבצעו דרך קישורי שותפים אלו. עם זאת, אין לראות בכך המלצה לרכישה, ו<strong>הלוט היומי</strong> אינה אחראית לתכנים, למוצרים, לשירותים או למדיניות הפרטיות של אתרים חיצוניים אלו. כל התקשרות או עסקה שתבוצע מול אתרים אלו היא באחריותו הבלעדית של המשתמש.</p>
+      </div>
+
+      <div class="card">
+        <h3>אין בהצגה המלצה או אחריות</h3>
+        <p>התכנים באתר ובקבוצות ניתנים לצורך מידע כללי בלבד. אין בהצגתם משום התחייבות, מצג, אחריות או הבטחת זמינות, מחיר, איכות או התאמה לצורך מסוים. כל רכישה, שימוש או הסתמכות נעשים באחריות המשתמש בלבד.</p>
+      </div>
+
+      <div class="card">
+        <h3>שינויים בתנאי השימוש</h3>
+        <p>הלוט היומי לא תישא באחריות לכל נזק ישיר או עקיף, כספי או אחר, שייגרם עקב שימוש באתר, בעיכוב או בתקלה, בהפניה לשירות חיצוני, או בשל פעולת צדדים שלישיים.</p>
+      </div>
+
+      <div class="card">
+        <h3>שינויים בתנאי השימוש</h3>
+    <p><strong>הלוט היומי</strong> שומרת לעצמה את הזכות הבלעדית לשנות או לעדכן את תנאי השימוש הללו מעת לעת, לפי שיקול דעתה הבלעדי וללא צורך במסירת הודעה מוקדמת. הנוסח המעודכן יפורסם באתר ויחייב מרגע פרסומו. המשך שימושך באתר ובשירות לאחר פרסום השינויים יהווה הסכמה מצדך לתנאים המעודכנים.</p>
+      </div>
+
+      <div class="card">
+        <h3>סיום והשעיית שימוש</h3>
+        <p>אנו רשאים להשעות או להפסיק גישה לאתר או לקבוצות, באופן זמני או קבוע, אם נמצא שימוש החורג מהתקנון, אם קיים סיכון אבטחתי, או לפי שיקול דעתנו הסביר.</p>
+      </div>
+
+      <div class="card">
+        <h3>דין ושיפוט</h3>
+        <p>התקנון וכל מחלוקת בקשר אליו יתפרשו וידונו לפי דיני מדינת ישראל. סמכות השיפוט הבלעדית נתונה לבתי המשפט המוסמכים במדינת ישראל.</p>
+      </div>
+
+      <div class="card">
+        <h3>יצירת קשר</h3>
+    <p>בכל שאלה, בקשה או הבהרה בנוגע לתנאי שימוש אלו, ניתן לפנות אלינו באמצעות <a href="/contact.html">טופס יצירת הקשר</a> באתר או באמצעות הודעת וואטסאפ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <p style="margin-top:20px;"><a href="/" class="cta-button">חזרה לדף הראשי</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/">דף הבית</a> |
+        <a href="/privacy.html">מדיניות פרטיות</a> |
+        <a href="/terms.html">תקנון ותנאי שימוש</a> |
+        <a href="/privacy.html">מדיניות פרטיות</a>  |
+        <a href="/contact.html">צרו קשר</a>
+      </div>
+            <div class="container mx-auto text-center">
+                <p class="text-gray-400 mb-4">© 2025 הלוט היומי - כל הזכויות שמורות</p>
+            </div>
+  </footer>
+
+</body>
+</html>
