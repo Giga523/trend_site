@@ -1,728 +1,707 @@
 <!DOCTYPE html>
-<!-- saved from url=(0140)https://bqxh1k6fbfb0whpe.canva-hosted-embed.com/codelet/AAEAEGJxeGgxazZmYmZiMHdocGUAAAAAAZnzsxZ1O6F0cOJhA-par8q0VG0I5JECY7gjqwXaqcZA-CRqngM/ -->
-<html lang="he" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="images/logo.png">
-    <title>הלוט היומי</title>
-    <style>
+<html lang="en" style="--background-color: #ffffff; --primary-color: #1a237e; --accent-color: #7c4dff; --cta-color: #ff6b35; --text-color: #2c3e50;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sleep Reclaim System - Fall Asleep in Under 20 Minutes</title>
+  <script src="a_data_002/element_sdk.js"></script>
+  <style>
         body {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', -webkit-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #000;
-            background: #fff;
-            direction: rtl;
-        }
-
-        * {
-            box-sizing: border-box;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100%;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px;
+            background: #ffffff;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
         }
 
-        /* Hero Section */
-        .hero {
-            padding: 60px 0 80px;
+        .hero-section {
+            background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+            color: white;
+            padding: 60px 40px;
             text-align: center;
-            background: linear-gradient(135deg, #39FF14 0%, #00d4aa 50%, #0099ff 100%);
-            color: #000;
             position: relative;
             overflow: hidden;
-            animation: fadeIn 1s ease-out;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.9);
-            z-index: 1;
-        }
-
-        .hero .container {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            font-weight: 900;
-            margin: 0 0 20px;
+        .hero-headline {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
             line-height: 1.2;
-            animation: slideUp 0.8s ease-out 0.2s both;
         }
 
-        .hero h2 {
-            font-size: clamp(1.1rem, 3vw, 1.4rem);
-            font-weight: 400;
-            margin: 0 0 40px;
-            color: #333;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            animation: slideUp 0.8s ease-out 0.4s both;
+        .hero-subheadline {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            background: #f8f9fa;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
         .cta-button {
-            display: inline-block;
-            background: #39FF14;
-            color: #000;
-            padding: 18px 32px;
-            font-size: 1.2rem;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
             font-weight: 700;
-            text-decoration: none;
-            border-radius: 16px;
-            box-shadow: 0 8px 24px rgba(57, 255, 20, 0.3);
+            cursor: pointer;
             transition: all 0.3s ease;
-            margin: 0 0 15px;
-            animation: slideUp 0.8s ease-out 0.6s both;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(57, 255, 20, 0.4);
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
         }
 
-        .trust-line {
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 10px;
+        .section {
+            padding: 60px 40px;
         }
 
-        /* Sticky CTA for mobile */
-        .sticky-cta {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: #fff;
-            padding: 15px 20px;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
-            z-index: 1000;
-            display: none;
-        }
-
-        .sticky-cta .cta-button {
-            width: 100%;
-            text-align: center;
-            margin: 0;
-        }
-
-        @media (max-width: 768px) {
-            .sticky-cta {
-                display: block;
-            }
-            body {
-                padding-bottom: 80px;
-            }
-        }
-
-        /* Social Proof */
-        .social-proof {
-            padding: 40px 0;
-            text-align: center;
-            background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);
-            background-size: 400% 400%;
-            animation: gradientShift 8s ease infinite;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .avatars {
-            display: flex;
-            justify-content: center;
-            gap: -10px;
-            margin: 15px 0 0;
-        }
-
-        .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, #39FF14, #00d4aa);
-            border: 3px solid #fff;
-            margin-left: -10px;
-        }
-
-        /* Benefits Section */
-        .benefits {
-            padding: 80px 0;
-        }
-
-        .section-kicker {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #39FF14;
-            text-align: center;
-            margin: 0 0 40px;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .benefit-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .benefit-card:nth-child(2) {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            box-shadow: 0 8px 32px rgba(240, 147, 251, 0.3);
-        }
-
-        .benefit-card:nth-child(3) {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            box-shadow: 0 8px 32px rgba(79, 172, 254, 0.3);
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            border-color: #39FF14;
-        }
-
-        .benefit-card .icon {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-
-        /* How It Works */
-        .how-it-works {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-        }
-
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
-        }
-
-        .step {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .step-number {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(45deg, #39FF14, #00d4aa);
-            color: #000;
-            border-radius: 50%;
-            line-height: 60px;
+        .section-title {
+            font-size: 32px;
             font-weight: 700;
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 16px rgba(57, 255, 20, 0.4);
-            animation: pulse 2s infinite;
+            margin-bottom: 30px;
+            color: #1a237e;
+            text-align: center;
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        .personal-story {
+            background: #f8f9fa;
+            border-left: 5px solid #7c4dff;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 10px;
+            font-size: 18px;
+            line-height: 1.8;
+            font-style: italic;
         }
 
-        /* Showcase Grid */
-        .showcase {
-            padding: 80px 0;
-        }
-
-        .product-grid {
+        .problems-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin: 40px 0;
         }
 
-        .product-tile {
-            background: #f8f9fa;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        .problem-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #fff5f5;
+            border-radius: 10px;
+            border-left: 4px solid #ef4444;
+        }
+
+        .problem-item .x-mark {
+            color: #ef4444;
+            font-size: 24px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .breakthrough-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #f0fff4;
+            border-radius: 10px;
+            border-left: 4px solid #22c55e;
+        }
+
+        .benefit-item .check-mark {
+            color: #22c55e;
+            font-size: 24px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 4px solid #7c4dff;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #1a237e;
+        }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .module-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 4px solid #7c4dff;
             transition: transform 0.3s ease;
         }
 
-        .product-tile:hover {
-            transform: translateY(-2px);
+        .module-card:hover {
+            transform: translateY(-5px);
         }
 
-        .product-image {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(45deg, #ff9a9e, #fecfef, #fecfef);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .product-tile:nth-child(2) .product-image {
-            background: linear-gradient(45deg, #a8edea, #fed6e3);
-        }
-
-        .product-tile:nth-child(3) .product-image {
-            background: linear-gradient(45deg, #ffecd2, #fcb69f);
-        }
-
-        .product-tile:nth-child(4) .product-image {
-            background: linear-gradient(45deg, #d299c2, #fef9d7);
-        }
-
-        .product-caption {
-            padding: 15px;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        .showcase-cta {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        /* FAQ */
-        .faq {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-        }
-
-        .faq-item {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            padding: 25px;
+        .module-icon {
+            font-size: 48px;
             margin-bottom: 20px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-            border-left: 4px solid #39FF14;
-            transition: all 0.3s ease;
         }
 
-        .faq-item:hover {
-            transform: translateX(10px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-        }
-
-        .faq-question {
+        .module-title {
+            font-size: 20px;
             font-weight: 700;
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: #000;
+            margin-bottom: 15px;
+            color: #1a237e;
         }
 
-        .faq-answer {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* Final CTA */
-        .final-cta {
-            padding: 80px 0;
-            text-align: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            background-size: 200% 200%;
-            animation: gradientShift 6s ease infinite;
-            color: #fff;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .final-cta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.3);
-            z-index: 1;
-        }
-
-        .final-cta .container {
-            position: relative;
-            z-index: 2;
-        }
-
-        .final-cta h3 {
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            font-weight: 800;
-            margin: 0 0 30px;
-        }
-
-        /* Footer */
-        .footer {
-            padding: 40px 0;
+        .value-section {
             background: #f8f9fa;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
             text-align: center;
         }
 
-        .disclosure {
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 20px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+        .price-highlight {
+            font-size: 48px;
+            font-weight: 800;
+            color: #ff6b35;
+            margin: 20px 0;
         }
 
-        .footer-links {
-            font-size: 0.9rem;
+        .final-cta {
+            text-align: center;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+            color: white;
         }
 
-        .footer-links a {
-            color: #666;
-            text-decoration: none;
-            margin: 0 10px;
+        .security-text {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
         }
 
-        .footer-links a:hover {
-            color: #39FF14;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
+            .hero-headline {
+                font-size: 28px;
             }
             
-            .hero {
-                padding: 40px 0 60px;
+            .hero-subheadline {
+                font-size: 16px;
             }
             
-            .benefits, .how-it-works, .showcase, .faq, .final-cta {
-                padding: 60px 0;
+            .section {
+                padding: 40px 20px;
+            }
+            
+            .hero-section {
+                padding: 40px 20px;
             }
         }
-            .showcase {
-  margin: 40px 0;
-}
 
-.section-kicker {
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin-bottom: 16px;
-  text-align: right;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
-}
-
-.product-tile {
-  background: #151515;
-  border: 1px solid #222;
-  border-radius: 14px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.product-tile:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
-
-.product-image {
-  width: 100%;
-  height: 180px; /* controls the height of each tile's image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #0b0b0b;
-}
-
-.product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* fills the box, crops excess, keeps aspect */
-  display: block;
-}
-
-.product-caption {
-  padding: 10px;
-  text-align: center;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-.cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px; /* space between icon and text */
-  background: #39FF14;
-  color: #000;
-  font-weight: 700;
-  padding: 12px 20px;
-  border-radius: 14px;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
+        .policy-footer {
+        text-align: center;
+        padding: 20px 40px;
+        font-size: 14px;
+        color: #95a5a6; /* Lighter color for footers */
+        background: #f4f4f4;
+        border-top: 1px solid #e0e0e0;
+    }
     </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="a_data_002/data_sdk.js" type="text/javascript"></script>
+  <script src="a_data_002/3.4.17" type="text/javascript"></script>
+ <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}</style></head>
+ <body style="font-family: Inter, -webkit-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;">
+  <div class="container"><!-- Hero Section -->
+   <section class="hero-section">
+    <h1 class="hero-headline" id="main-headline">How To Fall Asleep In Under 20 Minutes And Break Free From Nighttime Anxiety In Just 14 Days</h1>
+    <p class="hero-subheadline" id="subheadline">even if you've been lying awake for hours every night and nothing has worked before</p>
+    <a href="#learn-more" class="cta-button" id="cta-button">LEARN MORE</a>
+   </section><!-- Personal Story Section -->
+   <section class="section">
+    <h2 class="section-title" id="personal-story-title">My 3:47 AM Wake-Up Call</h2>
+    <div class="personal-story">
+     "I'll never forget that night at 3:47 AM. I'd been lying in bed for
+ over four hours. Again. My alarm was set for 7 AM, and I was wide 
+awake, staring at the ceiling, my mind bouncing from work stress to 
+random thoughts. The anxiety started creeping in: 'If I fall asleep 
+right now, I'll get maybe 3 hours.' I've become a completely different person from the guy who used to hit the pillow and be out in five minutes."
+    </div>
+   </section><!-- Problems Section -->
+   <section class="section">
+    <h2 class="section-title">Does This Sound Familiar?</h2>
+    <p style="text-align: center; font-size: 18px; margin-bottom: 40px;">Most
+ men experiencing insomnia find themselves lying awake for 2-4 hours 
+while their mind races. You feel your body jolt awake every time you get
+ close to actual sleep. You've tried melatonin, cutting caffeine, sleep 
+meditation apps, and working out, but nothing has addressed the core 
+problem.</p>
+    <div class="problems-grid">
+     <div class="problem-item"><span class="x-mark">✗</span> <span>Lying awake for hours every night</span>
+     </div>
+     <div class="problem-item"><span class="x-mark">✗</span> <span>Racing thoughts that won't stop</span>
+     </div>
+     <div class="problem-item"><span class="x-mark">✗</span> <span>Jolting awake when close to sleep</span>
+     </div>
+     <div class="problem-item"><span class="x-mark">✗</span> <span>Anxiety about not getting enough sleep</span>
+     </div>
+     <div class="problem-item"><span class="x-mark">✗</span> <span>Feeling exhausted but wired</span>
+     </div>
+     <div class="problem-item"><span class="x-mark">✗</span> <span>Nothing seems to work anymore</span>
+     </div>
+    </div>
+   </section><!-- Breakthrough Section -->
+   <section class="breakthrough-section section">
+    <h2 class="section-title" id="breakthrough-title" style="color: white;">Then I Discovered Something That Changed Everything...</h2>
 
-        <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '3563003827329927');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3563003827329927&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<div style="max-width: 900px; margin: 0 auto 40px;">
+    <p style="font-size: 18px; text-align: center; margin-bottom: 30px;">
+        During one of my late-night research sessions, I stumbled across something a former military sleep researcher mentioned in an obscure forum thread.
+    </p>
     
-</head>
-<body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>רוצה לדעת מה מתפוצץ עכשיו בטיקטוק, באינסטגרם ובחנויות הכי חמות בעולם?</h1>
-            <h2>אנחנו צדים את המוצרים הכי ויראליים בזמן אמת. הגאדג'טים הכי שווים, אופנה, מטבח, ציוד לחיות מחמד ועוד - ושולחים אותם ישר לווטסאפ</h2>
-            <p>הקבוצה הקודמת שלנו התמלאה עד אפס מקום, ובעקבות הביקוש המטורף החלטנו לפתוח קבוצת VIP נוספת!</p>
-            <a href="https://chat.whatsapp.com/GFcNuDkgJdZKLjtvko1zSB?mode=wwc" class="cta-button">להצטרפות לקבוצת הווטסאפ<img src="/images/whatsapp-logo_icon-icons.com_57054.svg" width="24" height="24"/></a>
-            <div class="trust-line">בלי ספאם, רק המציאות השוות ביותר 🔥</div>
-        </div>
-    </section>
+    <p style="font-size: 18px; text-align: center; margin-bottom: 30px;">
+        He explained that most sleep advice focuses on external factors - your environment, your routine, supplements - but completely misses the <strong>psychological patterns</strong> that can affect nighttime rest.
+    </p>
+</div>
 
-    <!-- Social Proof -->
-    <section class="social-proof">
-        <div class="container">
-            <p>מאות אנשים מקבלים אצלנו עדכונים יומיים על הטרנדים הכי חמים ברשת</p>
-            <div class="avatars">
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-            </div>
+<!-- Author Intro Box -->
+<div style="background: rgba(255, 255, 255, 0.05); border-left: 4px solid #4CAF50; padding: 30px; margin: 40px auto; max-width: 850px; border-radius: 8px;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
+        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: bold; color: white; flex-shrink: 0;">
+            TK
         </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="benefits">
-        <div class="container">
-            <div class="section-kicker" style="text-align: center;">למה להצטרף?</div>
-            <div class="benefits-grid">
-                <div class="benefit-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
-                    <div class="icon">⚡</div>
-                    <p><strong>מזהים טרנדים בזמן אמת</strong></p>
-                    <p>צדים את המוצרים בדיוק כשהם מתחילים להתפוצץ ברשת</p>
-                </div>
-                <div class="benefit-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
-                    <div class="icon">🎯</div>
-                    <p><strong>בודקים ביקורות ומחירים</strong></p>
-                    <p>כל מוצר עובר סינון כדי לוודא שהוא באמת שווה</p>
-                </div>
-                <div class="benefit-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
-                    <div class="icon">🚀</div>
-                    <p><strong>שולחים לך את הקישור הישיר למוצר</strong></p>
-                    <p>בלי חיפושים, בלי בזבוז זמן. קיבלת, לחצת, רכשת</p>
-                </div>
-            </div>
+        <div>
+            <h3 style="margin: 0 0 5px 0; color: white; font-size: 24px;">Meet Tobias Keller</h3>
+            <p style="margin: 0; color: #b0b0b0; font-size: 16px;">Creator of The Sleep Reclaim System</p>
         </div>
-    </section>
+    </div>
+    
+    <p style="font-size: 17px; line-height: 1.7; margin-bottom: 20px; color: #e0e0e0;">
+        I spent months struggling with nighttime restlessness, watching the impact it had on my relationships, my work, and my overall quality of life.
+    </p>
+    
+    <p style="font-size: 17px; line-height: 1.7; margin-bottom: 20px; color: #e0e0e0;">
+        I tried many common approaches: supplements, meditation apps, exercise routines, sleep hygiene practices. While some helped temporarily, none addressed what I eventually discovered was the core issue: <em>the psychological patterns around bedtime.</em>
+    </p>
+    
+    <p style="font-size: 17px; line-height: 1.7; margin-bottom: 20px; color: #e0e0e0;">
+        That realization led me to research sleep psychology, CBT-I (Cognitive Behavioral Therapy for Insomnia), and neuroscience. After months of study and personal experimentation, I developed the Sleep Reclaim System - a method that addresses the <strong>anxiety-sleep feedback loop</strong> that many traditional approaches don't consider.
+    </p>
+    
+    <div style="background: rgba(76, 175, 80, 0.1); border-radius: 8px; padding: 20px; margin: 25px 0;">
+        <p style="font-size: 16px; font-weight: 600; color: #4CAF50; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">What Changed For Me:</p>
+        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 12px; color: #e0e0e0;">
+            ✓ Learned to approach bedtime without anxiety
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 12px; color: #e0e0e0;">
+            ✓ Developed a healthier relationship with sleep
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 12px; color: #e0e0e0;">
+            ✓ Built confidence in my body's natural rest abilities
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; margin: 0; color: #e0e0e0;">
+            ✓ Became more present for my family and daily life
+        </p>
+    </div>
+    
+    <p style="font-size: 17px; line-height: 1.7; margin-bottom: 20px; color: #e0e0e0;">
+        After working through these challenges myself, I began sharing my methods in online forums and working one-on-one with other men facing similar struggles.
+    </p>
+    
+    <p style="font-size: 17px; line-height: 1.7; margin: 0; color: #e0e0e0;">
+        Over the past two years, I've worked with <strong>more than 300 men</strong> using this system. I created The Sleep Reclaim System to share what I learned so others can benefit from these approaches.
+    </p>
+</div>
 
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <div class="container">
-            <div class="section-kicker" style="text-align: center;">איך זה עובד?</div>
-            <div class="steps-grid">
-                <div class="step" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
-                    <div class="step-number">1</div>
-                    <p>מצטרפים לקבוצה</p>
-                </div>
-                <div class="step" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
-                    <div class="step-number">2</div>
-                    <p>מקבלים בין מוצר ל2 ביום</p>
-                </div>
-                <div class="step" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
-                    <div class="step-number">3</div>
-                    <p>חוסכים זמן וכסף על הדילים הכי מטורפים </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<h3 style="color: white; text-align: center; font-size: 26px; margin: 50px 0 30px;">What I Learned Through My Research:</h3>
 
-    <!-- Showcase Grid -->
-    <section class="showcase">
-        <div class="container">
-            <div class="section-kicker" style="text-align: center;">מה העלינו לאחרונה?</div>
-            <div class="product-grid">
-                <div class="product-tile">
-                    <div class="product-image"><img src="images/S0c77aa29af7645508c67b37652c32199v.jpg_960x960q75.jpg_.avif" alt="example"/></div>
-                    <div class="product-caption">כף מדידה חשמלית</div>
-                </div>
-                <div class="product-tile">
-                    <div class="product-image"><img src="images/S2cc1ac7cebbd4b90b15f04548df0567eA.png_960x960.png_.avif" alt="example2"/></div>
-                    <div class="product-caption">מיני מגהץ ידני</div>
-                </div>
-                <div class="product-tile">
-                    <div class="product-image"><img src="images/S318d64de2b4e433d924d4b56d5394ec3B.jpg_960x960q75.jpg_.avif" alt="example2"/></div>
-                    <div class="product-caption">קונסולת משחקי רטרו</div>
-                </div>
-                <div class="product-tile">
-                    <div class="product-image"><img src="images/Sa4b486e162e54a7f9e39597c687517cfb.jpg_960x960q75.jpg_.avif" alt="example2"/></div>
-                    <div class="product-caption">מברשת ניקוי רב תכליתית</div>
-                </div>
-            </div>
-            <div class="showcase-cta">
-                <p>גלו את המוצרים שמשגעים את העולם עכשיו 👇</p>
-                <a href="https://chat.whatsapp.com/GFcNuDkgJdZKLjtvko1zSB?mode=wwc" class="cta-button">להצטרפות לקבוצת הווטסאפ<img src="/images/whatsapp-logo_icon-icons.com_57054.svg" width="24" height="24"/></a>
-            </div>
-        </div>
-    </section>
+<div style="max-width: 900px; margin: 0 auto;">
+    <p style="font-size: 18px; text-align: center; margin-bottom: 25px;">
+        According to sleep psychology research, <strong>many people experiencing sudden sleep difficulties are dealing with an overactive stress response at night</strong> - not necessarily a biological condition:
+    </p>
+    
+    <div style="background: rgba(255, 255, 255, 0.03); padding: 30px; border-radius: 10px; margin: 30px 0;">
+        <p style="font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
+            💡 <strong>Your brain can learn to associate bedtime with stress</strong> (especially after experiencing multiple difficult nights)
+        </p>
+        
+        <p style="font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
+            💡 <strong>The more you consciously "try" to sleep, the more alert your mind becomes</strong> - creating a counterproductive cycle
+        </p>
+        
+        <p style="font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
+            💡 <strong>Many sleep tips can reinforce anxiety patterns</strong> by making you hyperaware of what you "should" be doing
+        </p>
+        
+        <p style="font-size: 17px; line-height: 1.8; margin: 0;">
+            💡 <strong>Racing thoughts serve a purpose</strong> - they're your brain's way of staying alert when it perceives a problem
+        </p>
+    </div>
+    
+    <div style="background: rgba(255, 193, 7, 0.1); border-left: 3px solid #FFC107; padding: 25px; border-radius: 8px; margin: 30px 0;">
+        <p style="font-size: 18px; line-height: 1.7; margin: 0; color: #e0e0e0; font-style: italic;">
+            <strong style="color: #FFC107;">An important insight:</strong> Many people unknowingly reinforce sleep difficulties by staying in bed during periods of wakefulness, which can train the brain to associate the bed with being awake and stressed rather than resting.
+        </p>
+    </div>
+    
+    <p style="font-size: 18px; text-align: center; margin: 30px 0; color: #e0e0e0;">
+        <strong>I was making these same mistakes...</strong>
+    </p>
+    
+    <p style="font-size: 18px; text-align: center; margin: 30px 0; color: #e0e0e0;">
+        Through extensive research and learning from sleep psychologists specializing in CBT-I, people who successfully addressed similar challenges, and neuroscience researchers studying the sleep-anxiety connection, I discovered <strong>why traditional approaches often fall short</strong> - and more importantly, alternative approaches to consider.
+    </p>
+</div>
 
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <div class="section-kicker">שאלות נפוצות</div>
-            <div class="faq-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
-                <div class="faq-question">זה בתשלום?</div>
-                <div class="faq-answer">לא. ההצטרפות בחינם. אנחנו רק משתפים מה שחם.</div>
-            </div>
-            <div class="faq-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
-                <div class="faq-question">אתם שולחים הרבה הודעות?</div>
-                <div class="faq-answer">מקסימום 2 הודעות ביום, בלי ספאם.</div>
-            </div>
-            <div class="faq-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
-                <div class="faq-question">מה עם פרטיות?</div>
-                <div class="faq-answer">אנחנו לא מעבירים פרטים אישיים. מצטרפים לקבוצה, מקבלים עדכונים, וזהו.</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
+<div style="text-align: center; margin-top: 50px;">
+    <a href="#learn-more" class="cta-button">LEARN ABOUT THIS SYSTEM</a>
+</div>
+   </section><!-- Results Section -->
+   <section class="section">
+    <h2 class="section-title" id="results-title">The Results Speak For Themselves</h2>
+    <p style="text-align: center; font-size: 18px; margin-bottom: 40px;">By
+ breaking the psychological anxiety loop and retraining my brain's 
+association with sleep, I was able to fall asleep in under 20 minutes 
+most nights. I stopped the racing thoughts using specific mental 
+redirection techniques and woke up actually refreshed. After helping 
+over 300 other men replicate these results, I've refined this into a 
+step-by-step method anyone can use.</p>
+    <div class="results-grid">
+     <div class="benefit-item"><span class="check-mark">✓</span> <span>Fall asleep in under 20 minutes</span>
+     </div>
+     <div class="benefit-item"><span class="check-mark">✓</span> <span>Stop racing thoughts instantly</span>
+     </div>
+     <div class="benefit-item"><span class="check-mark">✓</span> <span>Wake up actually refreshed</span>
+     </div>
+     <div class="benefit-item"><span class="check-mark">✓</span> <span>Break the anxiety loop for good</span>
+     </div>
+     <div class="benefit-item"><span class="check-mark">✓</span> <span>Regain your natural sleep ability</span>
+     </div>
+     <div class="benefit-item"><span class="check-mark">✓</span> <span>Feel like yourself again</span>
+     </div>
+    </div>
+    <div class="testimonials">
+     <div class="testimonial">
+      <div class="testimonial-text">
+       "I went from 3-4 hours of sleep to 7-8 hours consistently. The 
+mental techniques actually work - my mind doesn't race anymore when I 
+hit the pillow."
+      </div>
+      <div class="testimonial-author">
+       - Mark R., 38
+      </div>
+     </div>
+     <div class="testimonial">
+      <div class="testimonial-text">
+       "Finally something that addresses the real problem. I'm sleeping 
+through the night for the first time in years. My wife says I'm a 
+different person."
+      </div>
+      <div class="testimonial-author">
+       - David L., 42
+      </div>
+     </div>
+     <div class="testimonial">
+      <div class="testimonial-text">
+       "The psychological approach made all the difference. I understand
+ why I couldn't sleep and now I have the tools to fix it. Game changer."
+      </div>
+      <div class="testimonial-author">
+       - James K., 35
+      </div>
+     </div>
+    </div>
+   </section><!-- Modules Section -->
+   <section class="section">
+    <h2 class="section-title">What's Inside The Sleep Reclaim System</h2>
+    <div class="modules-grid">
+     <div class="module-card">
+      <div class="module-icon">
+       🧠
+      </div>
+      <div class="module-title">
+       Module 1: The Insomnia Psychology Blueprint
+      </div>
+      <p>Finally understand why your brain is keeping you awake and 
+identify your specific anxiety loop that's sabotaging your sleep every 
+night.</p>
+     </div>
+     <div class="module-card">
+      <div class="module-icon">
+       🔄
+      </div>
+      <div class="module-title">
+       Module 2: Breaking the Thought Spiral
+      </div>
+      <p>Learn the exact mental redirection techniques that stop racing 
+thoughts in their tracks and calm your overactive mind within minutes.</p>
+     </div>
+     <div class="module-card">
+      <div class="module-icon">
+       ⚡
+      </div>
+      <div class="module-title">
+       Module 3: The 20-Minute Sleep Protocol
+      </div>
+      <p>The step-by-step bedtime routine that retrains your brain to associate bed with sleep, not anxiety and frustration.</p>
+     </div>
+     <div class="module-card">
+      <div class="module-icon">
+       🛡️
+      </div>
+      <div class="module-title">
+       Module 4: Anxiety-Proofing Your Sleep
+      </div>
+      <p>Advanced strategies to handle work stress, life pressure, and unexpected anxiety so they never interfere with your sleep again.</p>
+     </div>
+     <div class="module-card">
+      <div class="module-icon">
+       🎯
+      </div>
+      <div class="module-title">
+       Module 5: The 14-Day Implementation Plan
+      </div>
+      <p>Your complete roadmap with daily actions, progress tracking, and troubleshooting guides to ensure lasting results.</p>
+     </div>
+    </div>
+   </section><!-- Value Section -->
+   <section class="value-section">
+    <h2 class="section-title">Everything You Need For Just $13</h2>
+    <p style="font-size: 18px; margin-bottom: 30px;">The Sleep Reclaim 
+System is a comprehensive 100+ page PDF guide with five proven modules 
+plus five bonus guides covering emergency protocols, relationship 
+management, caffeine optimization, dad strategies, and supplement truth.
+ Everything you need for just $13 - less than a doctor's visit or sleep 
+supplements.</p>
+    <div class="price-highlight">
+     $13
+    </div>
+    <p style="font-size: 16px; color: #666;">Less than one doctor's visit • Instant PDF download • 30-day guarantee</p>
+   </section><!-- Final CTA -->
    <section class="final-cta">
-        <div class="container">
-            <h3>מצטרפים עכשיו ותופסים את הטרנד לפני כולם!</h3>
-            <a href="https://chat.whatsapp.com/GFcNuDkgJdZKLjtvko1zSB?mode=wwc" class="cta-button">הצטרפו עכשיו <img src="/images/whatsapp-logo_icon-icons.com_57054.svg" width="24" height="24"/></a>
-            <p>מספר המקומות בקבוצה מוגבל! ⌚</p>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-links">
-                <a href="/privacy.html">מדיניות פרטיות</a> |
-                <a href="/terms.html">תקנון ותנאי שימוש</a> |
-                <a href="/contact.html">צרו קשר</a>
-            </div>
-            <div class="container mx-auto text-center">
-                <p class="text-gray-400 mb-4">© 2025 הלוט היומי - כל הזכויות שמורות</p>
-            </div>
-        </div>
+    <h2 style="font-size: 36px; margin-bottom: 30px;">Ready to Reclaim Your Sleep?</h2><a href="#checkout" class="cta-button" id="final-cta" style="font-size: 20px; padding: 20px 50px;">LEARN MORE</a>
+    <p class="security-text">Click to learn more about how The Sleep Reclaim System can transform your nights. Secure checkout with instant PDF download.</p>
+    <br/>   
+   </section>
+   <footer class="policy-footer">
+        <p><a href="./privacy.html">Privacy Policy</a> | <a href="./terms.html">Terms and Conditions</a> | <a href="./contact.html">Contact</a></p>
+        <br/>
+
+        <p>&copy; 2025 Deepnightcalm. All Rights Reserved.</p>
+
+        <br/>
+
+            DISCLAIMER: Please understand results are not typical. Your results will vary and depend on many factors including but not limited to your background, experience, and commitment level. All sleep improvement entails consistent effort and action. If you have a diagnosed sleep disorder or other medical condition, please consult with a healthcare professional.
+NOT FACEBOOK: This site is not a part of the Facebook™ website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK is a trademark of FACEBOOK, Inc. DISCLAIMER: Please understand results are not typical. Your results will vary and depend on many factors including but not limited to your background, experience, and work ethic. All business entails risk as well as taking regular and consistent effort and action.
+Nothing on this page, any of our websites, or any of our content or curriculum is a promise or guarantee of results or future results, and we do not offer any legal, medical, tax or other professional advice. Any potential results referenced here, or on any of our sites, are illustrative of concepts only and should not be considered average results, exact results, or promises for actual or future performance. Use caution and always consult your accountant, lawyer or professional advisor before acting on this or any information related to a lifestyle change or your business or finances. You alone are responsible and accountable for your decisions, actions and results in life, and by your registration here you agree not to attempt to hold us liable for your decisions, actions or results, at any time, under any circumstance.
+This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+
+        
     </footer>
 
-    <!-- Sticky CTA for Mobile -->
-    <div class="sticky-cta" style="transition: transform 0.3s;">
-        <a href="https://chat.whatsapp.com/GFcNuDkgJdZKLjtvko1zSB?mode=wwc" class="cta-button">להצטרפות לקבוצת הווטסאפ</a>
-    </div>
-
-    <script>
-        
-        // Simple scroll animation for elements
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+  </div>
+  <script>
+        const defaultConfig = {
+            main_headline: "How To Fall Asleep In Under 20 Minutes And Break Free From Nighttime Anxiety In Just 14 Days",
+            subheadline: "even if you've been lying awake for hours every night and nothing has worked before",
+            cta_button_text: "GET YOUR COPY",
+            personal_story_title: "My 3:47 AM Wake-Up Call",
+            breakthrough_title: "What I Discovered Changed Everything",
+            results_title: "The Results Speak For Themselves",
+            final_cta_text: "DISCOVER THE SYSTEM - $13",
+            background_color: "#ffffff",
+            primary_color: "#1a237e",
+            accent_color: "#7c4dff",
+            cta_color: "#ff6b35",
+            text_color: "#2c3e50",
+            font_family: "Inter"
         };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+        let config = { ...defaultConfig };
 
-        // Observe benefit cards and FAQ items for scroll animations
-        document.querySelectorAll('.benefit-card, .faq-item, .step').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
+        async function onConfigChange(newConfig) {
+            config = { ...config, ...newConfig };
+            
+            // Update text content
+            const mainHeadline = document.getElementById('main-headline');
+            if (mainHeadline) mainHeadline.textContent = config.main_headline || defaultConfig.main_headline;
+            
+            const subheadline = document.getElementById('subheadline');
+            if (subheadline) subheadline.textContent = config.subheadline || defaultConfig.subheadline;
+            
+            const ctaButton = document.getElementById('cta-button');
+            if (ctaButton) ctaButton.textContent = config.cta_button_text || defaultConfig.cta_button_text;
+            
+            const personalStoryTitle = document.getElementById('personal-story-title');
+            if (personalStoryTitle) personalStoryTitle.textContent = config.personal_story_title || defaultConfig.personal_story_title;
+            
+            const breakthroughTitle = document.getElementById('breakthrough-title');
+            if (breakthroughTitle) breakthroughTitle.textContent = config.breakthrough_title || defaultConfig.breakthrough_title;
+            
+            const resultsTitle = document.getElementById('results-title');
+            if (resultsTitle) resultsTitle.textContent = config.results_title || defaultConfig.results_title;
+            
+            const finalCta = document.getElementById('final-cta');
+            if (finalCta) finalCta.textContent = config.final_cta_text || defaultConfig.final_cta_text;
 
-        // Show/hide sticky CTA based on main CTA visibility
-        const mainCTA = document.querySelector('.hero .cta-button');
-        const stickyCTA = document.querySelector('.sticky-cta');
+            // Update colors
+            document.documentElement.style.setProperty('--background-color', config.background_color || defaultConfig.background_color);
+            document.documentElement.style.setProperty('--primary-color', config.primary_color || defaultConfig.primary_color);
+            document.documentElement.style.setProperty('--accent-color', config.accent_color || defaultConfig.accent_color);
+            document.documentElement.style.setProperty('--cta-color', config.cta_color || defaultConfig.cta_color);
+            document.documentElement.style.setProperty('--text-color', config.text_color || defaultConfig.text_color);
 
-        const ctaObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (window.innerWidth <= 768) {
-                    if (entry.isIntersecting) {
-                        stickyCTA.style.transform = 'translateY(100%)';
-                    } else {
-                        stickyCTA.style.transform = 'translateY(0)';
+            // Update font
+            const customFont = config.font_family || defaultConfig.font_family;
+            document.body.style.fontFamily = `${customFont}, -webkit-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`;
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            config.background_color = value;
+                            if (window.elementSdk) window.elementSdk.setConfig({ background_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.primary_color || defaultConfig.primary_color,
+                        set: (value) => {
+                            config.primary_color = value;
+                            if (window.elementSdk) window.elementSdk.setConfig({ primary_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.accent_color || defaultConfig.accent_color,
+                        set: (value) => {
+                            config.accent_color = value;
+                            if (window.elementSdk) window.elementSdk.setConfig({ accent_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.cta_color || defaultConfig.cta_color,
+                        set: (value) => {
+                            config.cta_color = value;
+                            if (window.elementSdk) window.elementSdk.setConfig({ cta_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            config.text_color = value;
+                            if (window.elementSdk) window.elementSdk.setConfig({ text_color: value });
+                        }
                     }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => config.font_family || defaultConfig.font_family,
+                    set: (value) => {
+                        config.font_family = value;
+                        if (window.elementSdk) window.elementSdk.setConfig({ font_family: value });
+                    }
+                },
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["main_headline", config.main_headline || defaultConfig.main_headline],
+                ["subheadline", config.subheadline || defaultConfig.subheadline],
+                ["cta_button_text", config.cta_button_text || defaultConfig.cta_button_text],
+                ["personal_story_title", config.personal_story_title || defaultConfig.personal_story_title],
+                ["breakthrough_title", config.breakthrough_title || defaultConfig.breakthrough_title],
+                ["results_title", config.results_title || defaultConfig.results_title],
+                ["final_cta_text", config.final_cta_text || defaultConfig.final_cta_text]
+            ]);
+        }
+
+        // Initialize SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 }
             });
-        }, { threshold: 0.1 });
-
-        ctaObserver.observe(mainCTA);
-
-        // Smooth transitions for sticky CTA
-        stickyCTA.style.transition = 'transform 0.3s ease';
+        });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98fa0c02f7c82674',t:'MTc2MDY0MzgyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource.html"></iframe>
-
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99ddedaf35553d7c',t:'MTc2MzAzMzMzNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: medium; visibility: hidden;"></iframe>
 </body></html>
